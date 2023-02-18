@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+    
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <div class="modal"></div>
+
+  <header>
+    <img src="images/logo.svg" alt="Snap logo">
+    <div class="lateral-menu-btn">
+      <img src="images/icon-menu.svg" alt="Open menu icon" class="open-menu">
+      <img src="images/icon-close-menu.svg" alt="Close menu icon" class="close-menu">
+    </div>
+
+    <nav class="lateral-menu">
+        <ul class="lateral-menu__itens">
+          <li class="item__dropdown">
+            <a href="#">
+              <span>Features</span>
+              <img src="images/icon-arrow-up.svg" alt="Arrow up icon">
+              <img src="images/icon-arrow-down.svg" alt="Arrow down icon">
+            </a>
+            <ul class="dropdown__itens">
+              <li><img src="images/icon-todo.svg" alt="Todo List icon"> Todo List</li>
+              <li><img src="images/icon-calendar.svg" alt="Calendar icon"> Calendar</li>
+              <li><img src="images/icon-reminders.svg" alt="Reminders icon"> Reminders</li>
+              <li><img src="images/icon-planning.svg" alt="Planning icon"> Planning</li>
+            </ul>
+          </li>
+          <li class="item__dropdown">
+            <a href="#">
+              <span>Company</span>
+              <img src="images/icon-arrow-up.svg" alt="Arrow up icon">
+              <img src="images/icon-arrow-down.svg" alt="Arrow down icon">
+            </a>
+            <ul class="dropdown__itens">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Careers</a></li>
+          <li class="menu-item"><a href="#">About</a></li>
+        </ul>
+        <div class="registration">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
+    </nav>
+  </header>
+
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#"> Guilherme Sanches</a>.
+  </footer>
+   
+  <script src="main.js"></script>
+</body>
+</html>

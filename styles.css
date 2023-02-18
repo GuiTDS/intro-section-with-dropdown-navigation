@@ -1,0 +1,128 @@
+:root {
+    --white: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body .modal {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0, 8%, .5)
+}
+
+body.menu-open .modal {
+    display: initial;
+    opacity: 1;
+}
+
+header {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1.3rem 1rem;
+}
+
+.lateral-menu-btn {
+    position: fixed;
+    right: 1rem;
+    top: 1.3rem;
+    z-index: 2;
+}
+
+.close-menu {
+    display: none;
+}
+
+/* nav */
+
+.lateral-menu {
+    width: 65vw;
+    height: 100vh;
+    color: var(--gray);
+    background-color: var(--white);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    text-align: left;
+    transition: all .3s;
+    display: flex;
+}
+
+/* nav itens */
+.lateral-menu__itens {
+    margin-top: 4.5rem;
+}
+
+.menu-item {
+    margin: 1rem 0 1.4rem 20px;
+}
+
+.item__dropdown a{
+    margin-left: 20px;
+    
+}
+
+.item__dropdown span{
+    margin-right: 10px;
+    
+}
+
+.dropdown__itens {
+    margin: 1.5rem 0 1.8rem 2.8rem;
+}
+
+.dropdown__itens li {
+    margin-bottom: 1rem;
+}
+
+.dropdown__itens img {
+    margin-right: 10px;
+}
+
+.registration {
+    position: absolute;
+    top: 75vh;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration button {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.registration button:first-child {
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
