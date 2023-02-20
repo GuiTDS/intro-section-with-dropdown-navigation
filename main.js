@@ -1,17 +1,7 @@
-const modal = document.querySelector(".modal");
-const botaoAbrirMenuLateral = document.querySelector(".btn-menu-lateral");
-const menuLateral = document.querySelector(".menu-lateral");
-const botaoFecharMenuLateral = document.querySelector(".btn-menu-lateral-fechar");
+const btnOpenMenu = document.querySelector('.lateral-menu-btn');
+const lateralMenu = document.querySelector('.lateral-menu');
 
-botaoAbrirMenuLateral.addEventListener("click", () => {
-    menuLateral.classList.toggle("menu-lateral-ativo");
-    botaoFecharMenuLateral.style.visibility = "visible";
-    modal.style.visibility = "visible";
-
-})
-
-botaoFecharMenuLateral.addEventListener("click", () => {
-    menuLateral.classList.remove("menu-lateral-ativo");
-    botaoFecharMenuLateral.style.visibility = "hidden";
-    modal.style.visibility = "hidden";
+btnOpenMenu.addEventListener("click", () => {
+    document.body.classList.toggle('menu-open');
+    lateralMenu.classList.toggle('lateral-menu-active');
 })

@@ -24,14 +24,15 @@ body {
 }
 
 body .modal {
-    position: absolute;
+    position: fixed;
     display: none;
     top: 0;
     left: 0;
     opacity: 0;
     height: 100%;
     width: 100%;
-    background-color: hsla(0, 0, 8%, .5)
+    background-color: rgba(0, 0, 0, .6);
+    transition: all .3s linear;
 }
 
 body.menu-open .modal {
@@ -52,9 +53,18 @@ header {
     right: 1rem;
     top: 1.3rem;
     z-index: 2;
+    cursor: pointer;
 }
 
 .close-menu {
+    display: none;
+}
+
+body.menu-open .close-menu {
+    display: initial;
+}
+
+body.menu-open .open-menu {
     display: none;
 }
 
@@ -72,6 +82,11 @@ header {
     text-align: left;
     transition: all .3s;
     display: flex;
+    transform: translateX(100%);
+}
+
+.lateral-menu-active {
+    transform: translateX(0%);
 }
 
 /* nav itens */
@@ -85,12 +100,14 @@ header {
 
 .item__dropdown a{
     margin-left: 20px;
-    
+}
+
+.item__dropdown {
+    margin-bottom: 2rem;
 }
 
 .item__dropdown span{
-    margin-right: 10px;
-    
+    margin-right: 10px; 
 }
 
 .dropdown__itens {
@@ -105,24 +122,26 @@ header {
     margin-right: 10px;
 }
 
+.dropdown__itens {
+    display: none;
+}
+
 .registration {
-    position: absolute;
-    top: 75vh;
-    left: 5vw;
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 20px;
 }
 
 .registration button {
-    width: 200px;
-    padding: 15px;
+    margin: 0.3rem 0;
     border: 1px solid black;
-    border-radius: 15px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 200px;
 }
 
 .registration button:first-child {
     border: none;
-    padding: 0;
-    margin-bottom: 15px;
 }
+
