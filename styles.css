@@ -195,9 +195,15 @@ body.menu-open .open-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2.5rem 1.3rem 3rem 1.3rem;
+    margin: 2.5rem 1.3rem 4rem 1.3rem;
 }
 
 .logos img {
     width: 60px;
+}
+
+/* footer */
+
+footer {
+    margin-bottom: 15px;
 }
