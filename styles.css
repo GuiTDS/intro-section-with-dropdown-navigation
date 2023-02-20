@@ -51,7 +51,7 @@ header {
 .lateral-menu-btn {
     position: fixed;
     right: 1rem;
-    top: 1.3rem;
+    top: 1.4rem;
     z-index: 2;
     cursor: pointer;
 }
@@ -80,7 +80,7 @@ body.menu-open .open-menu {
     top: 0;
     z-index: 1;
     text-align: left;
-    transition: all .3s;
+    transition: all .4s;
     display: flex;
     transform: translateX(100%);
 }
@@ -126,6 +126,22 @@ body.menu-open .open-menu {
     display: none;
 }
 
+.dropdown-active .dropdown__itens {
+    display: block;
+}
+
+.item__dropdown .arrow-up {
+    display: none;
+}
+
+.dropdown-active .arrow-down {
+    display: none;
+}
+
+.dropdown-active .arrow-up {
+    display: initial;
+}
+
 .registration {
     display: flex;
     flex-direction: column;
@@ -145,3 +161,43 @@ body.menu-open .open-menu {
     border: none;
 }
 
+/* main section */
+
+.main-image {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.info {
+    margin: 2rem 1rem;
+    line-height: 1.5rem;
+}
+
+.main-title {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.main-info {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.btn-main {
+    color: var(--white);
+    background-color: var(--black);
+    padding: 15px 20px;
+    border-radius: 13px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 1.3rem 3rem 1.3rem;
+}
+
+.logos img {
+    width: 60px;
+}

@@ -26,10 +26,10 @@
     <nav class="lateral-menu">
         <ul class="lateral-menu__itens">
           <li class="item__dropdown">
-            <a href="#">
+            <a href="#" class="dropdown">
               <span>Features</span>
-              <img src="images/icon-arrow-up.svg" alt="Arrow up icon">
-              <img src="images/icon-arrow-down.svg" alt="Arrow down icon">
+              <img src="images/icon-arrow-up.svg" alt="Arrow up icon" class="arrow-up">
+              <img src="images/icon-arrow-down.svg" alt="Arrow down icon" class="arrow-down">
             </a>
             <ul class="dropdown__itens">
               <li><img src="images/icon-todo.svg" alt="Todo List icon"> Todo List</li>
@@ -39,10 +39,10 @@
             </ul>
           </li>
           <li class="item__dropdown">
-            <a href="#">
+            <a href="#" class="dropdown">
               <span>Company</span>
-              <img src="images/icon-arrow-up.svg" alt="Arrow up icon">
-              <img src="images/icon-arrow-down.svg" alt="Arrow down icon">
+              <img src="images/icon-arrow-up.svg" alt="Arrow up icon" class="arrow-up">
+              <img src="images/icon-arrow-down.svg" alt="Arrow down icon" class="arrow-down">
             </a>
             <ul class="dropdown__itens">
               <li>History</li>
@@ -59,6 +59,27 @@
         </ul>
     </nav>
   </header>
+
+  <main>
+    <picture>
+      <source media="(min-width: 465px )" srcset="images/image-hero-desktop.png">
+      <img src="images/image-hero-mobile.png" alt="Main image" class="main-image">  
+    </picture>
+
+    <section class="info">
+      <h1 class="main-title">Make remote work</h1>
+      <p class="main-info">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar</p>
+      <button class="btn-main">Learn more</button>  
+    </section>
+
+    <section class="logos">
+      <img src="images/client-databiz.svg" alt="Databiz logo">
+      <img src="images/client-audiophile.svg" alt="Audiophile logo">
+      <img src="images/client-meet.svg" alt="Meet logo">
+      <img src="images/client-maker.svg" alt="Maker logo">
+    </section>
+    
+  </main>
 
   
   <footer class="attribution">
