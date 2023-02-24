@@ -207,3 +207,175 @@ body.menu-open .open-menu {
 footer {
     margin-bottom: 15px;
 }
+
+/* media querys */
+
+@media (min-width: 465px) {
+    	
+    body { 
+            overflow-x: hidden; 
+            background-color: var(--white);
+        }
+
+    .modal {
+        display: none;
+    }
+
+    /* main */
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 4rem 8rem;
+        gap: 10rem;
+        font-size: 18px;
+        
+    }
+
+    picture {
+        grid-column: 2;
+    }
+
+    .info {
+        margin-left: 2.5rem;
+        margin-top: 5.5rem;
+        line-height: 1.5rem;
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .main-image {
+        width: 30vw;
+        min-width: 30vw;
+        margin-left: 
+    }
+
+    .logos {
+        grid-column: 1;
+        grid-row: 1;
+        position: relative;
+        top: 77vh;
+        margin-left: 2.5rem;
+        height: fit-content;
+    }
+    
+    .main-title {
+        font-size: 4.7rem;
+        line-height: 5rem;
+    }
+
+    .main-info {
+        margin: 3rem 0;
+    }
+
+    .btn-main {
+        padding: 1rem 2rem;
+        cursor: pointer;
+    }
+
+    .btn-main:hover {
+        color: var(--black);
+        background-color: var(--white);
+        border: 1px solid black;
+    }
+
+    /* lateral-menu */
+    .lateral-menu-btn {
+        display: none;
+    }
+
+    header{
+        padding: 0;
+        margin: 20px;
+        width: 100%;
+        position: relative;
+    }
+
+    header img {
+        max-width: 80px;
+        margin: 0;
+    }
+
+    #snap-logo {
+        margin-left: 1.5rem;
+    }
+
+    .lateral-menu {
+        position: initial;
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 90vw;
+        background-color: transparent;
+       
+    }
+
+    .lateral-menu__itens {
+        display: flex;
+        margin-top: 1.5rem;
+        text-align: left;
+    }
+
+    .item__dropdown {
+        margin: 0;
+        width: 120px; 
+    }
+
+    .dropdown:hover {
+        color: var(--black);
+    }
+
+    .menu-item {
+        margin: 0 .8rem 0 1.5rem; 
+    }
+
+    .menu-item:hover {
+        color: var(--black);
+    }
+
+    .dropdown__itens {
+        margin: 0;
+        margin-top: 20px;
+        background-color: white;
+        box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2);
+        border-radius: .5rem;
+        padding: .8rem;
+        text-align: left;
+        font-size: 16px;
+        height: max-content;
+        width: max-content;
+    }
+
+    .dropdown__itens li {
+        margin-left: 6px;
+        cursor: pointer;
+    }
+
+    .dropdown__itens li:hover {
+        color: var(--black);
+    }
+
+    .registration {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 8px;
+        left: 70vw;  
+    }
+
+    .registration button {
+        padding: 0;
+        width: 120px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .registration button:hover {
+        color: var(--black);
+    }
+
+
+}
